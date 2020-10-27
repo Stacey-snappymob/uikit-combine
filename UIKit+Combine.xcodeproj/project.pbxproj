@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		015602A52546A1C9009C8D71 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015602A42546A1C9009C8D71 /* SignUpViewController.swift */; };
 		015602AD2546A1F7009C8D71 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015602AC2546A1F7009C8D71 /* SignUpViewModel.swift */; };
+		0158199D2547D85A0095CC83 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0158199C2547D85A0095CC83 /* TableViewController.swift */; };
+		015819A22547D86F0095CC83 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015819A12547D86F0095CC83 /* TableViewModel.swift */; };
+		015819AA2547FAEC0095CC83 /* StringTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015819A82547FAEC0095CC83 /* StringTableViewCell.swift */; };
+		015819AB2547FAEC0095CC83 /* StringTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015819A92547FAEC0095CC83 /* StringTableViewCell.xib */; };
+		015819B02547FB510095CC83 /* StringViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015819AF2547FB510095CC83 /* StringViewModel.swift */; };
 		01D53E572542C912008C98B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53E562542C912008C98B5 /* AppDelegate.swift */; };
 		01D53E592542C912008C98B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53E582542C912008C98B5 /* SceneDelegate.swift */; };
 		01D53E5B2542C912008C98B5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53E5A2542C912008C98B5 /* MainViewController.swift */; };
@@ -41,6 +46,11 @@
 /* Begin PBXFileReference section */
 		015602A42546A1C9009C8D71 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		015602AC2546A1F7009C8D71 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		0158199C2547D85A0095CC83 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		015819A12547D86F0095CC83 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		015819A82547FAEC0095CC83 /* StringTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTableViewCell.swift; sourceTree = "<group>"; };
+		015819A92547FAEC0095CC83 /* StringTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StringTableViewCell.xib; sourceTree = "<group>"; };
+		015819AF2547FB510095CC83 /* StringViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringViewModel.swift; sourceTree = "<group>"; };
 		01D53E532542C912008C98B5 /* UIKit+Combine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit+Combine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D53E562542C912008C98B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01D53E582542C912008C98B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +103,33 @@
 			path = "Sign Up";
 			sourceTree = "<group>";
 		};
+		0158199B2547D81F0095CC83 /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				015819A72547F9BB0095CC83 /* Cell */,
+				0158199C2547D85A0095CC83 /* TableViewController.swift */,
+				015819A12547D86F0095CC83 /* TableViewModel.swift */,
+			);
+			path = "Table View";
+			sourceTree = "<group>";
+		};
+		015819A72547F9BB0095CC83 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				015819A82547FAEC0095CC83 /* StringTableViewCell.swift */,
+				015819A92547FAEC0095CC83 /* StringTableViewCell.xib */,
+				015819AF2547FB510095CC83 /* StringViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		015819C3254800310095CC83 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		01D53E4A2542C912008C98B5 = {
 			isa = PBXGroup;
 			children = (
@@ -116,8 +153,10 @@
 		01D53E552542C912008C98B5 /* UIKit+Combine */ = {
 			isa = PBXGroup;
 			children = (
+				015819C3254800310095CC83 /* New Group */,
 				015602A32546A1A6009C8D71 /* Sign Up */,
 				01D53E892542CAB0008C98B5 /* Login */,
+				0158199B2547D81F0095CC83 /* Table View */,
 				01D53E562542C912008C98B5 /* AppDelegate.swift */,
 				01D53E582542C912008C98B5 /* SceneDelegate.swift */,
 				01D53E5A2542C912008C98B5 /* MainViewController.swift */,
@@ -261,6 +300,7 @@
 			files = (
 				01D53E632542C913008C98B5 /* LaunchScreen.storyboard in Resources */,
 				01D53E602542C913008C98B5 /* Assets.xcassets in Resources */,
+				015819AB2547FAEC0095CC83 /* StringTableViewCell.xib in Resources */,
 				01D53E5E2542C912008C98B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,10 +329,14 @@
 				01D53E9B2542CBAC008C98B5 /* LoginViewController.swift in Sources */,
 				015602A52546A1C9009C8D71 /* SignUpViewController.swift in Sources */,
 				01D53E5B2542C912008C98B5 /* MainViewController.swift in Sources */,
+				0158199D2547D85A0095CC83 /* TableViewController.swift in Sources */,
+				015819AA2547FAEC0095CC83 /* StringTableViewCell.swift in Sources */,
 				01D53E572542C912008C98B5 /* AppDelegate.swift in Sources */,
 				01D53EA02542CC0F008C98B5 /* LoginViewModel.swift in Sources */,
+				015819A22547D86F0095CC83 /* TableViewModel.swift in Sources */,
 				01D53E592542C912008C98B5 /* SceneDelegate.swift in Sources */,
 				015602AD2546A1F7009C8D71 /* SignUpViewModel.swift in Sources */,
+				015819B02547FB510095CC83 /* StringViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
