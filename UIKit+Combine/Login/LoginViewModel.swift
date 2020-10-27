@@ -16,7 +16,7 @@ class LoginViewModel: ObservableObject {
 	}
 	
 	lazy var validatedInputs = Publishers.CombineLatest($email, $password)
-		.map { $0.count > 2 && $1.count > 2 }
+		.map { $0.count > 2 && $0.isEmail && $1.count > 2 }
 		.eraseToAnyPublisher()
 }
 
